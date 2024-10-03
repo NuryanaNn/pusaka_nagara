@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: "Poppins", sans-serif !important; */
+    font-family: "Roboto", sans-serif !important;
+    /* height: 10000px; */
+    background-color: #F1F5F9 !important;
+}
+
+.navbar{
+    padding: .5rem 5% !important;
+}
+
+.home__section .main-title{
+    font-size: 60px !important;
+}
+
+.home__section ul{
+    
+}
+
+.home__hero__teks{
+    padding:0 5%;
+    max-width: 900px;
+}
+
+.masthead__stars i{
+    color: gold;
+}
+
+.navbar img{
+    width: 200px;
+}
+
+.jumbotron{
+    height: 520px ;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.testi__quote{
+    height: 170px;
+}
+
+.testi__author img{
+    width: 100px;
+}
+
+.wwa .card{
+    background-color: #10243E;
+    border-radius: 30px;
+}
+
+.clients__logo_items img{
+    width: 200px;
+}
+
+.our_solution_card .card{
+    background-color: #F1F5F9;
+}
+
+.masthead__item{
+    width: 500px;
+}
+
+.why__pusaka{
+    background-color: #10243E;
+}
+
+.why__pusaka img{
+    width: 35px;
+}
+
+.why__pusaka_soc{
+    border-radius: 20px;
+}
+
+
+.why__pusaka_soc  img{
+    width: 35px;
+}
+
+.rss .card{
+    background-color: #F1F5F9;
+}
+
+.why__pusaka_soc {
+    background-color: #10243E;
+}
+
+.wwa{
+    padding: 0 3%;
+}
+
+.footer img{
+    width: 150px;
+}
+
+.footer_logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.block__opps_item_thumb img{
+    width: 150px;
+}
+
+.our__blog__items .card{
+    background-color: #F1F5F9;
+}
+
+.testimonials__{
+    background-color: #10243E;
+}
+
+.testimonials__ .card{
+    background-color: #F1F5F9;
+}
+
+.testimonials__ .testimonial__text{
+    height: 200px;
+}
+
+.artikel .card{
+    background-color: #F1F5F9;
+}
+
+.addr_location .location{
+    width: 25%;
+}
+
+.addr_location .address{
+    width: 75%;
+}
+
+/* Halaman Produk */
+.masthead__product_2 h3,
+.masthead__solusi h3{
+    font-size: 45px;
+}
+
+.masthead__product_2 .card{
+    padding: 3rem;
+}
+
+.block__opps{
+    padding: 2rem;
+}
+
+.block__oops_img img{
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+
+/* Halaman Solusi */
+.masthead__solusi .card{
+    padding: 0 3rem;
+}
+
+
+
+
+@media (max-width:480px) {
+    .home__section .main-title{
+        font-size: 30px !important;
+    }
+
+    .home__section ul{
+        justify-content: flex-start;
+    }
+
+    .home__section ul li:nth-child(1){
+        margin-left: 20px;
+    }
+
+    .masthead__logo{
+        justify-content: center;
+    }
+
+    .masthead__logo img{
+        width: 120px;
+    }
+
+    .clients__logo img{
+        width: 100px;
+    }
+
+    .rss_title{
+        text-align: center;
+    }
+
+    .masthead__item{
+        width: 350px;
+    }
+
+    .cta__button ul,
+    .cta__button ul li,
+    .cta__button ul li button{
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer__logo{
+        margin-bottom: 50px;
+    }
+
+    .footer__logo img{
+        width: 250px;
+    }
+
+    .addr_location .location{
+        width: 100%;
+    }
+
+    .addr_location .address{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .wwa{
+        padding: 0 1%;
+    }
+
+
+    /* Halaman Produk */
+    .masthead__product_2 h3{
+        font-size: 40px;
+    }
+    
+
+    .masthead__product_2 .card{
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .block__oops_img img{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .block__opps{
+        padding: 1rem;
+    }
+
+    /* Halaman solusi */
+    .masthead__solusi ul,
+    .masthead__solusi ul li,
+    .masthead__solusi ul li button{
+        width: 100%;
+    }
+
+    .masthead__solusi .card{
+        padding: 0 1rem;
+    }
+
+    .client{
+        padding: 0 1rem;
+    }
+}
