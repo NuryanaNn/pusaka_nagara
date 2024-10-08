@@ -3,43 +3,67 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 body{
-    /* font-family: "Poppins", sans-serif !important; */
     font-family: "Roboto", sans-serif !important;
     /* height: 10000px; */
     background-color: #F1F5F9 !important;
 }
 
-.navbar{
-    padding: .5rem 5% !important;
+/* custom bootstrap */
+
+.gold__color{
+    color: gold;
 }
+
+.blue__light{
+    background-color: #F1F5F9 !important;
+}
+
+.dark__blue{
+    background-color: #10253E !important;
+}
+
+.purple__bg{
+    background-color: #311B92;
+}
+
+.purple__light__bg{
+    background-color: #4B61DD;
+}
+
+.thumb__img{
+    width: 50px !important;
+}
+
+.small__img__logo{
+    width: 150px;
+}
+
+
+
+/* .navbar{
+    padding: .5rem 5% !important;
+} */
 
 .home__section .main-title{
     font-size: 60px !important;
 }
 
-.home__section ul{
-    
-}
-
 .home__hero__teks{
-    padding:0 5%;
+    padding:2rem 5%;
     max-width: 900px;
+    margin-top: 100px;
 }
 
-.masthead__stars i{
-    color: gold;
-}
-
-.navbar img{
+/* .navbar img{
     width: 200px;
-}
+} */
 
 .jumbotron{
-    height: 520px ;
+    height: 600px ;
 }
 
 .overlay{
@@ -58,7 +82,7 @@ body{
 }
 
 .wwa .card{
-    background-color: #10243E;
+    background-color: #10243e;
     border-radius: 30px;
 }
 
@@ -74,7 +98,8 @@ body{
     width: 500px;
 }
 
-.why__pusaka{
+.why__pusaka,
+.prioritas__kami{
     background-color: #10243E;
 }
 
@@ -164,15 +189,371 @@ body{
 }
 
 
+/* All page */
+.custom_container{
+    padding: 0 4rem !important;
+}
+
+
 /* Halaman Solusi */
 .masthead__solusi .card{
     padding: 0 3rem;
 }
 
+/* Halaman Resource */
+.rss__news .card,
+.rss__study .card{
+    background-color: #F1F5F9;
+}
+
+.rss_podcast .card{
+    background-color: #4810C0;
+}
+
+.rss_podcast img{
+    width: 100px;
+}
+
+.rss_banner .card{
+    background-color: #F1F5F9;
+}
+
+.footer__cta .card__cta{
+    background-color: #10243E;
+}
+
+
+/* Halaman Klien kami */
+.post__items .card{
+    height: 450px;
+}
+
+
+/* .post__img__thumb img{
+    width: 300px;
+    
+} */
+
+.post__items img{
+    height: 200px;
+    object-fit:cover;
+}
+
+.post__items .img_thumb{
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.client__collection .card,
+.bussiness .card{
+    height: 500px;
+}
+
+.client__collection img,
+.bussiness img{
+    height: 200px;
+}
+
+.program_partnership img{
+    width: 100px;
+}
+
+/* Halaman Login */
+.container__login img{
+    width: 200px;
+}
+
+/* Halaman Customer service */
+
+
+
+
+
+
+/* Ini navbar */
+.navbar__sect{
+    padding: .3rem 4%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+.navbar__sect .logo{
+    margin-top: -10px;
+}
+
+.navbar__sect a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .navbar__sect img{
+    width: 150px;
+} */
+
+.navbar__sect ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+    position: relative;
+}
+
+.navbar__sect .navigation__sec span{
+    margin-right: 10px;
+}
+
+.navbar__sect .sci__sec button{
+    padding: 10px 20px;
+    border: none;
+    background: #4B61DD;
+    border-radius: 10px;
+    color: white;
+}
+
+.navbar__sect .sci__sec i{
+    margin-right: 10px;
+}
+
+.navbar__sect li img{
+    width: 20px;
+}
+
+.navbar__sect ul .underline{
+    position: relative;
+}
+
+.navbar__sect .underline::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: purple;
+    width: 100%;
+    height: 3px;
+    visibility: hidden;
+}
+
+.navbar__sect ul .underline:hover::before{
+    visibility: visible;
+}
+
+/* Popup Styling */
+.popup {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    top: 100%;
+    left: -200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* padding: 1rem; */
+    width: 860px;
+    z-index: 200;
+    border-radius: 5px;
+}
+
+ 
+
+.popup__tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: #FBFCFC;
+    padding: 2rem 1rem;
+}
+
+.popup__tabs button {
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    color: #333;
+}
+
+/* .popup__tabs button.active {
+    background-color: #4B61DD;
+    color: white;
+} */
+
+.popup__content {
+    flex: 2;
+    padding: 2rem 1rem;
+}
+
+.popup__content h3{
+    margin-bottom: 15px;
+}
+
+.popup__content .card__talent{
+    width: 230px;
+    gap: 20px;
+    display: flex;
+}
+
+.popup__content .card__talent p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.popup__content #content1 li{
+    margin-bottom: 15px;
+}
+
+.tab__content {
+    display: none;
+}
+
+.tab__content.active {
+    display: block;
+}
+
+.popup__content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.popup__content ul li {
+    margin-bottom: 10px;
+}
+
+.popup__content ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.popup__content ul li a:hover {
+    color: #4B61DD;
+}
+
+/* Show Popup on Hover */
+.product:hover .popup {
+    display: flex;
+}
+
+/* Show Popup on Hover */
+/* Popup Styling for Solutions */
+.popup-solution {
+    display: none; /* Sembunyikan popup secara default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Lebar popup solusi */
+    z-index: 200;
+    border-radius: 5px;
+    padding: 2rem 0;
+    margin-top: 5px;
+}
+
+.solution .solusi__item{
+    display: flex;
+}
+
+.solution .solusi__item .img__thumb{
+    margin-right: 10px;
+}
+
+.popup-solution .popup__content {
+    padding: 1rem;
+}
+
+/* Show Popup on Hover for Solutions */
+.solution:hover .popup-solution {
+    display: flex; /* Tampilkan popup saat hover */
+}
+
+
+/* Popup Styling for Resources */
+.popup-resource {
+    display: none; /* Sembunyikan popup secara default */
+    position: absolute;
+    top: 100%;
+    left: -450px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1000px; /* Lebar popup Resource */
+    z-index: 200;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.popup-resource .popup__tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.popup-resource .tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup-resource .tab.active {
+    font-weight: bold;
+    border-bottom: 2px solid #007bff; /* Gaya untuk tab aktif */
+}
+
+.popup-resource .popup__content {
+    padding: 1rem;
+}
+
+/* Show Popup on Hover for Resources */
+.resource:hover .popup-resource {
+    display: flex; /* Tampilkan popup saat hover */
+}
+
+
+/* tentang mekari */
+.popup-mekari {
+    display: none; /* Sembunyikan popup secara default */
+    width: 400px; /* Atur lebar popup */
+    background-color: #fff; /* Warna latar belakang */
+    border: 1px solid #ccc; /* Batas */
+    padding: 20px; /* Ruang dalam */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+    position: absolute; /* Posisi */
+    z-index: 1000; /* Di atas elemen lainnya */
+    margin-top: 5px;
+}
+
+.mekari:hover .popup-mekari {
+    display: flex; /* Tampilkan popup saat hover */
+    flex-direction: column; /* Susun kolom secara vertikal */
+}
+
+
+
+
+
+
+
+
+
 
 
 
 @media (max-width:480px) {
+
+    /* All page */
+.custom_container{
+    padding: 0 1rem !important;
+}
+
+
     .home__section .main-title{
         font-size: 30px !important;
     }
@@ -267,5 +648,10 @@ body{
 
     .client{
         padding: 0 1rem;
+    }
+
+    /* Halaman CS */
+    .panduan__cs{
+        height: 5000px;
     }
 }
