@@ -23,6 +23,81 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+var swiper = new Swiper(".items_blog", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    // grabCursor: true, // Menambahkan opsi ini agar kursor bisa berganti saat menggeser
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true, // Memperbaiki typo "disabledonINteraction" menjadi "disableOnInteraction"
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 1,
+        },
+    },
+});
+
+var swiper = new Swiper(".swiperArtikel", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    // grabCursor: true, // Menambahkan opsi ini agar kursor bisa berganti saat menggeser
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true, // Memperbaiki typo "disabledonINteraction" menjadi "disableOnInteraction"
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 4,
+        },
+        480: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+});
+
+var swiper = new Swiper(".professional__swiper", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    // grabCursor: true, // Menambahkan opsi ini agar kursor bisa berganti saat menggeser
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true, // Memperbaiki typo "disabledonINteraction" menjadi "disableOnInteraction"
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 1,
+        },
+    },
+});
+
 var swiper = new Swiper(".my_rss_items", {
     loop: true,
     centeredSlides: true,

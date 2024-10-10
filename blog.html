@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tentang Nagara Pusaka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <style>
+    .no-scroll {
+      height: 100vh; /* Tinggi penuh viewport */
+      overflow: hidden; /* Tidak bisa di-scroll */
+    }
+    .scroll {
+      height: 100vh; /* Tinggi penuh viewport */
+      overflow-y: auto; /* Scroll kebawah (y-axis) */
+    }
+    .scroll-content {
+      height: 200%; /* Tinggi konten lebih besar dari viewport untuk mengaktifkan scroll */
+    }
+  </style>
+  <body>
+    <header>
+      <div class="navbar__sect">
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="" class="small__img__logo"></a>
+        </div>
+
+        <div class="navigation__sec">
+            <ul>
+                <li class="underline product">
+                    <a href="produk.html"><span>Produk</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup rounded-1">
+                        <div class="popup__tabs d-flex flex-column py-4 px-2">
+                            <button class="tab active border-0 bg-transparent text-start" data-tab="content1">
+                                <h5 class="fs-6">Software Utama</h5>
+                                <p style="font-size: 13px;">Inovasi software-as-a-service Mekari untuk manajemen bisnis</p>
+                            </button>
+                            <button class="tab border-0 bg-transparent text-start" data-tab="content2">
+                                <h5 class="fs-6">Layanan</h5>
+                                <p style="font-size: 13px;">Layanan profesional dari Mekari untuk karyawan & bisnis</p>
+                            </button>
+                            <button class="tab border-0 bg-transparent text-start" data-tab="content3">
+                                <h5 class="fs-6">Software Pendukung</h5>
+                                <p style="font-size: 13px;">Dukungan inovasi ekosistem Mekari untuk akselerasi bisnis</p>
+                            </button>
+                        </div>
+                        <div class="popup__content">
+                            <div id="content1" class="tab__content active">
+                                <p>Software Utama</p>
+                                <ul>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-Talenta.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Talenta</h5>
+                                                <p class="text-secondary" style="font-size: 14px;">Software HR dan Management Karyawan</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-qontak-CRM.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Qontak</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software CRM & <br> Omnichannel</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-Jurnal.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Jurnal</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software Akuntansi & Supply Chain</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-klikpajak.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Klipajak</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software Manajemen Pajak Karyawan & Bisnis</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-Flex.png" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Flex</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software Management dan dukungan karyawan</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-expense.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="fw-bold fs-6">Mekari Expense</p>
+                                                <p style="margin-top: -15px;">Software manajemen anggaran dan pengeluaran</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-e-Sign.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Sign</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software otoritas & tanda tangan digital</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-e-Sign.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Sign</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software otoritas & tanda tangan digital</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-stream.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="fw-bold fs-6">Mekari Stream</p>
+                                                <p style="margin-top: -15px;">Software ekstraksi data dengan OCR</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-mekari-capital.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="fw-bold fs-6">Mekari Capital</p>
+                                                <p style="margin-top: -15px;">Software managemen pembayaran bisnis</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div id="content2" class="tab__content">
+                                <ul>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                    
+                                </ul>
+                            </div>
+                            <div id="content3" class="tab__content">
+                                <ul>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>                
+                
+                <li class="underline solution">
+                    <a href="solusi.html"><span>Solusi</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup-solution py-2 bg-white mt-1 rounded-1 z-3 position-absolute">
+                        <div class="popup__content">
+                            <ul>
+                                <li class="solution__li rounded-1 w-100"><a href="#">
+                                    <div class="solusi__item px-1 pt-4 d-flex align-items-start">
+                                        <div class="img__thumb">
+                                            <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="solusi__teks">
+                                            <h5 class="fw-bold fs-6">Bussiness Growth</h5>
+                                            <p style="margin-top: -5px;">Solusi bisnis berkembang dan berekpansi</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li class="solution__li rounded-1 w-100"><a href="#">
+                                    <div class="solusi__item px-1 pt-4 d-flex align-items-start">
+                                        <div class="img__thumb">
+                                            <img src="assets/img/ich-solution-professional (1).svg" alt="">
+                                        </div>
+                                        <div class="solusi__teks">
+                                            <p class="fw-bold fs-6">Professional Growth</p>
+                                            <p style="margin-top: -5px;">Solusi Praktis untuk berkontribusi lebih baik</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="underline resource">
+                    <a href="resources.html"><span>Resource</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup-resource position-absolute bg-white rounded-2 mt-1">
+                        <div class="popup__tabs  d-flex flex-column py-4 px-2">
+                            <div class="tab active" data-tab="resource1">
+                              <h3 class="fw-bold fs-6">Panduan & Literasi</h3>
+                                <p style="margin-top: -5px; font-size: 14px;">Berbagai wawasan untuk segala kebutuhan anda</p>
+                            </div>
+                            <div class="tab" data-tab="resource2">
+                              <h6 class="fw-bold fs-6">Kolaborasi</h6>
+                              <p style="margin-top: -5px; font-size: 14px;">Buka peluang untuk tumbuh dengan berbagai program kreatif kami</p>
+                            </div>
+                            <div class="tab" data-tab="resource3">
+                              <h6 class="fw-bold fs-6">Partner Komersial</h6>
+                              <p style="margin-top: -5px; font-size: 14px;">Sinergikan bisnis anda dengan sousi dan layanan kami</p>
+                            </div>
+                            <div class="tab" data-tab="resource4">
+                              <h6 class="fw-bold fs-6">Program & Promosi</h6>
+                              <p style="margin-top: -5px; font-size: 14px;">Kolaborasi mekari dan partner untuk kembangkan bisnis anda</p>
+                            </div>
+                        </div>
+                        <div class="popup__content">
+                            <div id="resource1" class="tab__content active">
+                              <p>Panduan & literasi</p>
+                              
+                              <div class="solution_wrapper d-flex flex-wrap">
+                                <div class="solution__items">
+                                  <a href="blog.html">
+                                    <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                      <div class="images_sl ">
+                                        <img src="assets/img/ich-solution-business.svg" alt="">
+                                      </div>
+                                      <div class="text_sl">
+                                        <p class="mt-4 mx-1">Blog</p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="solution__items">
+                                  <a href="customer__service.html">
+                                    <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                      <div class="images_sl ">
+                                        <img src="assets/img/ich-help-centre.svg" alt="">
+                                      </div>
+                                      <div class="text_sl">
+                                        <p class="mt-4 mx-1">Pusat Bantuan</p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="solution__items">
+                                  <a href="klien_kami.html">
+                                    <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                      <div class="images_sl ">
+                                        <img src="assets/img/ich-mengapa-mekari.svg" alt="">
+                                      </div>
+                                      <div class="text_sl">
+                                        <p class="mt-4 mx-1">Study Kasus</p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="resource2" class="tab__content">
+                                <p>Kolaborasi</p>
+                                <div class="solution_wrapper d-flex flex-wrap">
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-news.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">News & PR</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="customer__service.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-events.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Mekari Event</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="klien_kami.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ic-h-file-audio.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Mekari Podcast</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="klien_kami.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-community.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Mekari Community</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div id="resource3" class="tab__content">
+                                <p>Partner Komersial</p>
+                                <div class="solution_wrapper d-flex flex-wrap">
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Program Referal</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="program_interior.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Program Sistem Integrator</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="klien_kami.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Program Reseller</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div id="resource4" class="tab__content">
+                                <p>Program dan Promosi</p>
+                                <div class="solution_wrapper d-flex flex-wrap">
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  
+                                  
+  
+  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="underline"><a href="">Harga</a></li>
+                <li class="underline mekari">
+                    <a href="tentang.html"><span>Mekari</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup-mekari">
+                        <div class="popup__content">
+                            <p>Tentang Mekari</p>
+                            <ul>
+                              <li><a href="carrers.html">
+                                  <div class="solusi__item d-flex">
+                                      <div class="img__thumb">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                      </div>
+                                      <div class="solusi__teks">
+                                          <p>Karir</p>
+                                          <p>Solusi bisnis berkembang dan berekpansi</p>
+                                      </div>
+                                  </div>
+                              </a></li>
+                              <li><a href="#">
+                                  <div class="solusi__item d-flex">
+                                      <div class="img__thumb">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                      </div>
+                                      <div class="solusi__teks">
+                                          <p>Mengapa Mekari</p>
+                                          <p>Solusi bisnis berkembang dan berekpansi</p>
+                                      </div>
+                                  </div>
+                              </a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="sci__sec">
+            <ul>
+                <li class="underline"><a href="">Sign In</a></li>
+                <li><button><i class="fab fa-whatsapp"></i><span>Whatsapp Kami</span></button></li>
+            </ul>
+        </div>
+    </div>
+  </header>
+  
+
+    <main>
+        <section class="blog__sect py-5 bg-white">
+            <div class="container-fluid py-4">
+                <div class="custom_container">
+                    <div class="row">
+                        <!-- Kolom pertama yang tidak bisa di-scroll -->
+                        <div class="col-6 no-scroll bg-light p-3">
+                          <div class="blog__items__content swiper items_blog">
+                            <div class="item_blog_wrapper swiper-wrapper">
+                                <div class="blog__card__items swiper-slide">
+                                    <div class="card w-100 border-0 purple__light__bg">
+                                        <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="blog__card__items swiper-slide">
+                                    <div class="card w-100 border-0 purple__light__bg">
+                                        <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="blog__card__items swiper-slide">
+                                    <div class="card w-100 border-0 purple__light__bg">
+                                        <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- Kolom kedua yang bisa di-scroll -->
+                        <div class="col-6 scroll bg-white">
+                          <div class="row scroll-content">
+                            <!-- Subkolom pertama (col-3) -->
+                            <div class="col-md-6 p-2 bg-1">
+                              <h5 class="fs-6">Paling Banyak Di Baca</h5>
+                              <div class="row">
+                                <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                    <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Business & Economy</p>
+                                      <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                      <ul class="d-flex list-unstyled">
+                                        <li>5 Maret 2024</li>
+                                        <li class="mx-2">3 Min read</li>
+                                      </ul>
+                                      <ul class="list-unstyled d-flex">
+                                        <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                        <li class="mx-2">Gattar Fath Athallah</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                    <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Business & Economy</p>
+                                      <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                      <ul class="d-flex list-unstyled">
+                                        <li>5 Maret 2024</li>
+                                        <li class="mx-2">3 Min read</li>
+                                      </ul>
+                                      <ul class="list-unstyled d-flex">
+                                        <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                        <li class="mx-2">Gattar Fath Athallah</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                    <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Business & Economy</p>
+                                      <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                      <ul class="d-flex list-unstyled">
+                                        <li>5 Maret 2024</li>
+                                        <li class="mx-2">3 Min read</li>
+                                      </ul>
+                                      <ul class="list-unstyled d-flex">
+                                        <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                        <li class="mx-2">Gattar Fath Athallah</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                    <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Business & Economy</p>
+                                      <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                      <ul class="d-flex list-unstyled">
+                                        <li>5 Maret 2024</li>
+                                        <li class="mx-2">3 Min read</li>
+                                      </ul>
+                                      <ul class="list-unstyled d-flex">
+                                        <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                        <li class="mx-2">Gattar Fath Athallah</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                    <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Business & Economy</p>
+                                      <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                      <ul class="d-flex list-unstyled">
+                                        <li>5 Maret 2024</li>
+                                        <li class="mx-2">3 Min read</li>
+                                      </ul>
+                                      <ul class="list-unstyled d-flex">
+                                        <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                        <li class="mx-2">Gattar Fath Athallah</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                  
+                            <!-- Subkolom kedua (col-3) -->
+                            <div class="col-md-6 bg-white p-2 text-dark">
+                              <h5 class="fs-6">Terbaru</h5>
+                                <div class="card w-100 border-0 purple__light__bg">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 13px;">Digital Transformation</p>
+                                    <h5 class="card-title fs-6">Transformasi Digital Perbankan: Tantangan dan Peluang</h5>
+                                        <ul class="list-unstyled d-flex">
+                                            <li>7 Okt 2024</li>
+                                            <li class="mx-2">5 min read</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card w-100 border-0 purple__light__bg">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 13px;">Digital Transformation</p>
+                                    <h5 class="card-title fs-6">Transformasi Digital Perbankan: Tantangan dan Peluang</h5>
+                                        <ul class="list-unstyled d-flex">
+                                            <li>7 Okt 2024</li>
+                                            <li class="mx-2">5 min read</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card w-100 border-0 purple__light__bg">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 13px;">Digital Transformation</p>
+                                    <h5 class="card-title fs-6">Transformasi Digital Perbankan: Tantangan dan Peluang</h5>
+                                        <ul class="list-unstyled d-flex">
+                                            <li>7 Okt 2024</li>
+                                            <li class="mx-2">5 min read</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card w-100 border-0 purple__light__bg">
+                                    <div class="card-body">
+                                        <p class="card-text" style="font-size: 13px;">Digital Transformation</p>
+                                    <h5 class="card-title fs-6">Transformasi Digital Perbankan: Tantangan dan Peluang</h5>
+                                        <ul class="list-unstyled d-flex">
+                                            <li>7 Okt 2024</li>
+                                            <li class="mx-2">5 min read</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subs__sect bg-white">
+            <div class="custom_container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3>Dapatkan akses eksklusif ke konten pilihan seputar bisnis dan karier profesional untuk menjawab kebutuhan Anda</h3>
+                    </div>
+    
+                    <div class="col-md-3 d-flex align-items-center">
+                        <button class="btn btn-primary">Subscribe Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore__bisnis bg-white py-5">
+            <div class="custom_container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Eksplor Bisnis</h5>
+    
+                        <div class="card__content_wrapper">
+                            <div class="card__items">
+                                <p>Digital Transpormation</p>
+                                <h3 class="fs-6">Transformasi Digital Perbankan : Tantangan dan Peluang</h3>
+                                <ul class="list-unstyled d-flex">
+                                    <li>7 Okt 2024</li>
+                                    <li class="mx-2">1 min read</li>
+                                </ul>
+                            </div>
+                            <div class="card__items">
+                                <p>Digital Transpormation</p>
+                                <h3 class="fs-6">Transformasi Digital Perbankan : Tantangan dan Peluang</h3>
+                                <ul class="list-unstyled d-flex">
+                                    <li>7 Okt 2024</li>
+                                    <li class="mx-2">1 min read</li>
+                                </ul>
+                            </div>
+                            <div class="card__items">
+                                <p>Digital Transpormation</p>
+                                <h3 class="fs-6">Transformasi Digital Perbankan : Tantangan dan Peluang</h3>
+                                <ul class="list-unstyled d-flex">
+                                    <li>7 Okt 2024</li>
+                                    <li class="mx-2">1 min read</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                            <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Business & Economy</p>
+                              <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                              <ul class="d-flex list-unstyled">
+                                <li>5 Maret 2024</li>
+                                <li class="mx-2">3 Min read</li>
+                              </ul>
+                              <ul class="list-unstyled d-flex">
+                                <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                <li class="mx-2">Gattar Fath Athallah</li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card__items">
+                            <p>Digital Transpormation</p>
+                            <h3 class="fs-6">Transformasi Digital Perbankan : Tantangan dan Peluang</h3>
+                            <ul class="list-unstyled d-flex">
+                                <li>7 Okt 2024</li>
+                                <li class="mx-2">1 min read</li>
+                            </ul>
+                        </div>
+                        <div class="card__items">
+                            <p>Digital Transpormation</p>
+                            <h3 class="fs-6">Transformasi Digital Perbankan : Tantangan dan Peluang</h3>
+                            <ul class="list-unstyled d-flex">
+                                <li>7 Okt 2024</li>
+                                <li class="mx-2">1 min read</li>
+                            </ul>
+                        </div>
+                        <div class="card__items">
+                            <p>Digital Transpormation</p>
+                            <h3 class="fs-6">Transformasi Digital Perbankan : Tantangan dan Peluang</h3>
+                            <ul class="list-unstyled d-flex">
+                                <li>7 Okt 2024</li>
+                                <li class="mx-2">1 min read</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bisnis__bottom py-5 bg-white">
+            <div class="custom_container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card__items">
+                            <p>Digital transformation</p>
+                            <h5>Tahapan transformasi Digital supplu chain dan manfaatnya</h5>
+                            <ul class="list-unstyled d-flex">
+                                <li>4 oktober</li>
+                                <li class="mx-2">1 min read</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card__items">
+                            <p>Digital transformation</p>
+                            <h5>Tahapan transformasi Digital supplu chain dan manfaatnya</h5>
+                            <ul class="list-unstyled d-flex">
+                                <li>4 oktober</li>
+                                <li class="mx-2">1 min read</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card__items">
+                            <p>Digital transformation</p>
+                            <h5>Tahapan transformasi Digital supplu chain dan manfaatnya</h5>
+                            <ul class="list-unstyled d-flex">
+                                <li>4 oktober</li>
+                                <li class="mx-2">1 min read</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artikel__sorotan bg-white">
+            <div class="custom_container">
+                <h3>Artikel Sorotan</h3>
+
+                <div class="artikel__wrapper swiper swiperArtikel">
+                    <div class="artikel_wrapper swiper-wrapper mt-3">
+                        <div class="card__slide swiper-slide" style="width: 500px; height: 500px;">
+                            <img src="assets/img/image-2024-09-25T121456.849-500x333.webp" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="card__slide swiper-slide" style="width: 500px; height: 500px;">
+                            <img src="assets/img/image-2024-09-25T121456.849-500x333.webp" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="card__slide swiper-slide" style="width: 500px; height: 500px;">
+                            <img src="assets/img/image-2024-09-25T121456.849-500x333.webp" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="card__slide swiper-slide" style="width: 500px; height: 500px;">
+                            <img src="assets/img/image-2024-09-25T121456.849-500x333.webp" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="card__slide swiper-slide" style="width: 500px; height: 500px;">
+                            <img src="assets/img/image-2024-09-25T121456.849-500x333.webp" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="card__slide swiper-slide" style="width: 500px; height: 500px;">
+                            <img src="assets/img/image-2024-09-25T121456.849-500x333.webp" alt="" class="w-100 h-100">
+                        </div>
+                        <div class="card__slide swiper-slide" style="width: 500px; height: 500px;">
+                            <img src="assets/img/image-2024-09-25T121456.849-500x333.webp" alt="" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="eksplor__professional bg-white py-5">
+            <div class="custom_container">
+                <div class="eksplor__title">
+                    <h3>Eksplor Professional</h3>
+                </div>
+
+                <div class="eksplor_pro__content pt-5">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="card__item mb-2 border-2 border-primary">
+                                <p>Carrer & Profession</p>
+                                <h3 class="fs-5">13 Karakter yang harus anda miliki untuk sukses berwirausaha</h3>
+                                <ul class="list-unstyled d-flex">
+                                    <li>12 Sep 2024</li>
+                                    <li class="mx-3">3 min read</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <div class="professionalWrapper swiper professional__swiper">
+                                <div class="card__wrapper swiper-wrapper w-100">
+                                    <div class="card__items swiper-slide w-100">
+                                        <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                            <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Business & Economy</p>
+                                              <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                              <ul class="d-flex list-unstyled">
+                                                <li>5 Maret 2024</li>
+                                                <li class="mx-2">3 Min read</li>
+                                              </ul>
+                                              <ul class="list-unstyled d-flex">
+                                                <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                                <li class="mx-2">Gattar Fath Athallah</li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="card__items swiper-slide w-100">
+                                        <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                            <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Business & Economy</p>
+                                              <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                              <ul class="d-flex list-unstyled">
+                                                <li>5 Maret 2024</li>
+                                                <li class="mx-2">3 Min read</li>
+                                              </ul>
+                                              <ul class="list-unstyled d-flex">
+                                                <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                                <li class="mx-2">Gattar Fath Athallah</li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="card__items swiper-slide w-100">
+                                        <div class="card w-100 border-0 purple__light__bg" style="margin-bottom: 20px;">
+                                            <img src="assets/img/SaaS.webp" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <p class="card-text">Business & Economy</p>
+                                              <h5 class="card-title fs-6"><a href="" class="text-decoration-none">Simak Tata Cara Daftar NPWP Online yang Mudah dan Praktis</a></h5>
+                                              <ul class="d-flex list-unstyled">
+                                                <li>5 Maret 2024</li>
+                                                <li class="mx-2">3 Min read</li>
+                                              </ul>
+                                              <ul class="list-unstyled d-flex">
+                                                <li><img src="assets/img/gattar.jpg" alt="" style="width:20px; height: 20px;" class="rounded-circle"></li>
+                                                <li class="mx-2">Gattar Fath Athallah</li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resource__sect py-5 bg-white text-white">
+            <div class="custom_container">
+                <div class="row bg-black">
+                    <div class="col-md-6">
+                        <div class="card__item py-4 d-flex align-items-center">
+                            <div class="card__text">
+                                <img src="assets/img/logo-mekari.svg" alt="" class="thumb__img">
+                                <h5>Te Dynamic and Future of Cloud-Based Software on indonesia</h5>
+                            </div>
+                            <div class="card__img" style="width: 300px;">
+                                <img src="assets/img/The-Dynamics-and-Future-of-Cloud-Based-Software-in-Indonesia_Book-360x500.png" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-4">
+                        <p>Mekari Whitepapper</p>
+                        <h3>Up, Up, and away: 5 reasons why SaaS adoption in Indoneia is acceleerating</h3>
+                        <p>16 Jan 2024</p>
+                        <p>Download Whitepapper <i class="fas fa-arrow-right"></i></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main>
+            
+
+    <section class="footer py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Logo -->
+            <div class="col-12 col-md-2">
+              <img src="assets/img/logo.png" alt="" class="small__img__logo">
+            </div>
+            
+            <!-- Mengapa Mekari -->
+            <div class="col-6 col-md-2">
+              <h5>Mengapa Pusaka Nagara</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-secondary">Pusat Bantuan</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Klien Kami</a></li>
+              </ul>
+            </div>
+      
+            <!-- Produk -->
+            <div class="col-6 col-md-2">
+              <h5>Produk</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-secondary">Mekari Talenta</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari Jurnal</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Mekari Qontak</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari Klipajak</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Mekari Flex</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari Sign</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Mekari Expense</a></li>
+              </ul>
+            </div>
+      
+            <!-- Solusi -->
+            <div class="col-6 col-md-2">
+              <h5>Solusi</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-secondary">Software ERP</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Integrasi</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Harga</a></li>
+              </ul>
+            </div>
+      
+            <!-- Perusahaan -->
+            <div class="col-6 col-md-2">
+              <h5>Perusahaan</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-secondary">Tentang Mekari</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari University</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Karir - <a href="">We're Hiring!</a></a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Hubungi Kami</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Kebijakan Privacy</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Syarat & Ketentuan</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Keamanan</a></li>
+                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Blog</a></li>
+                <li><a href="#" class="text-decoration-none text-secondary">Sitemap</a></li>
+              </ul>
+            </div>
+      
+            <!-- Footer Logo -->
+            <div class="col-12 col-md-2 footer_logo">
+              <ul class="list-unstyled d-flex">
+                <li><a href="#"><img src="assets/img/qr-code-jurnal_EDIT.png.webp" alt=""></a></li>
+                <li class="mx-2"><a href="#"><img src="assets/img/pse-terdaftar.png.webp" alt=""></a></li>
+                <li><a href="#"><img src="assets/img/logo-iso-1.svg" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  
+      <div class="container">
+        <hr>
+      </div>
+  
+      <section class="footer_addr mt-3">
+        <div class="container pt-3">
+          <div class="row d-flex justify-content-between">
+            <div class="col-12 col-md-2 flex justify-content-center align-items-center">
+              <ul class="d-flex list-unstyled flex justify-content-center align-items-center">
+                <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                <li class="mx-2"><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                <li class="mx-2"><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                <li class="ms-2"><img src="assets/img/icf-linkedin.svg" alt=""></li>
+              </ul>
+            </div>
+            <div class="col-md-9 px-5 addr_location">
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between flex-wrap">
+                  <span class="location"><strong>Jakarta</strong></span>
+                  <span class="address">
+                    Mid Plaza 2, Jl. Jenderal Sudirman No.4, Kel. Karet Tengsin, Kec. Tanah Abang, Kota Jakarta Pusat, Jakarta 10220</span>
+                </li>
+                <li class="d-flex justify-content-between my-3 flex-wrap">
+                  <span class="location"><strong>Surabaya</strong></span>
+                  <span class="address">Jl. Ngagel Jaya Selatan No.158, Kel. Pucang Sewu, Kec. Gubeng, Kota Surabaya, Jawa Timur 60284</span>
+                </li>
+                <li class="d-flex justify-content-between flex-wrap">
+                  <span class="location"><strong>Bandung</strong></span>
+                  <span class="address">l. A. Yani No.271A, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114</span>
+                </li>
+                <li class="d-flex justify-content-between mt-3 flex-wrap">
+                  <span class="location"><strong>Medan</strong></span>
+                  <span class="address">Jl. KH. Zainul Arifin No.152, Kel. Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20151</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="footer__bot bg-white text-center py-4 mt-5">
+        <p>© Copyright 2024 PT Mid Solusi Nusantara.</p>
+      </section>
+      
+        
+      </main>
+  
+  
+  
+      <script src="script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  </html>
