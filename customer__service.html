@@ -13,34 +13,556 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item px-3">
-                  <a class="nav-link active" aria-current="page" href="produk.html">Produk</a>
+      <div class="navbar__sect">
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="" class="small__img__logo"></a>
+        </div>
+
+        <div class="navigation__sec">
+            <ul>
+                <li class="underline product">
+                    <a href="produk.html"><span>Produk</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup rounded-1">
+                        <div class="popup__tabs d-flex flex-column py-4 px-2">
+                            <button class="tab active border-0 bg-transparent text-start" data-tab="content1">
+                                <h5 class="fs-6">Software Utama</h5>
+                                <p style="font-size: 13px;">Inovasi software-as-a-service Mekari untuk manajemen bisnis</p>
+                            </button>
+                            <button class="tab border-0 bg-transparent text-start" data-tab="content2">
+                                <h5 class="fs-6">Layanan</h5>
+                                <p style="font-size: 13px;">Layanan profesional dari Mekari untuk karyawan & bisnis</p>
+                            </button>
+                            <button class="tab border-0 bg-transparent text-start" data-tab="content3">
+                                <h5 class="fs-6">Software Pendukung</h5>
+                                <p style="font-size: 13px;">Dukungan inovasi ekosistem Mekari untuk akselerasi bisnis</p>
+                            </button>
+                        </div>
+                        <div class="popup__content">
+                            <div id="content1" class="tab__content active">
+                                <p>Software Utama</p>
+                                <ul>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-Talenta.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Talenta</h5>
+                                                <p class="text-secondary" style="font-size: 14px;">Software HR dan Management Karyawan</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-qontak-CRM.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Qontak</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software CRM & <br> Omnichannel</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-Jurnal.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Jurnal</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software Akuntansi & Supply Chain</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-klikpajak.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Klipajak</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software Manajemen Pajak Karyawan & Bisnis</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-Flex.png" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Flex</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software Management dan dukungan karyawan</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-expense.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="fw-bold fs-6">Mekari Expense</p>
+                                                <p style="margin-top: -15px;">Software manajemen anggaran dan pengeluaran</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-e-Sign.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Sign</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software otoritas & tanda tangan digital</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-e-Sign.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <h5 class="fw-bold fs-6">Mekari Sign</h5>
+                                                <p style="font-size: 14px;" class="text-secondary">Software otoritas & tanda tangan digital</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-stream.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="fw-bold fs-6">Mekari Stream</p>
+                                                <p style="margin-top: -15px;">Software ekstraksi data dengan OCR</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                    <a href="">
+                                      <li>
+                                        <div class="card__talent">
+                                              <div class="thumb__icn">
+                                                <img src="assets/img/apps-mekari-capital.webp" alt="">
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="fw-bold fs-6">Mekari Capital</p>
+                                                <p style="margin-top: -15px;">Software managemen pembayaran bisnis</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div id="content2" class="tab__content">
+                                <ul>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                    
+                                </ul>
+                            </div>
+                            <div id="content3" class="tab__content">
+                                <ul>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                  <a href="">
+                                    <li>
+                                      <div class="card__talent">
+                                            <div class="thumb__icn">
+                                              <img src="assets/img/apps-Talenta.webp" alt="">
+                                          </div>
+                                          <div class="card__text">
+                                              <p class="fw-bold fs-6">Mekari Talenta</p>
+                                              <p style="margin-top: -15px;">Software HR dan Management Karyawan</p>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>                
+                
+                <li class="underline solution">
+                    <a href="solusi.html"><span>Solusi</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup-solution py-2 bg-white mt-1 rounded-1 z-3 position-absolute">
+                        <div class="popup__content">
+                            <ul>
+                                <li class="solution__li rounded-1 w-100"><a href="#">
+                                    <div class="solusi__item px-1 pt-4 d-flex align-items-start">
+                                        <div class="img__thumb">
+                                            <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="solusi__teks">
+                                            <h5 class="fw-bold fs-6">Bussiness Growth</h5>
+                                            <p style="margin-top: -5px;">Solusi bisnis berkembang dan berekpansi</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li class="solution__li rounded-1 w-100"><a href="#">
+                                    <div class="solusi__item px-1 pt-4 d-flex align-items-start">
+                                        <div class="img__thumb">
+                                            <img src="assets/img/ich-solution-professional (1).svg" alt="">
+                                        </div>
+                                        <div class="solusi__teks">
+                                            <p class="fw-bold fs-6">Professional Growth</p>
+                                            <p style="margin-top: -5px;">Solusi Praktis untuk berkontribusi lebih baik</p>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="solusi.html">Solusi</a>
+                
+                <li class="underline resource">
+                    <a href="resources.html"><span>Resource</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup-resource position-absolute bg-white rounded-2 mt-1">
+                        <div class="popup__tabs  d-flex flex-column py-4 px-2">
+                            <div class="tab active" data-tab="resource1">
+                              <h3 class="fw-bold fs-6">Panduan & Literasi</h3>
+                                <p style="margin-top: -5px; font-size: 14px;">Berbagai wawasan untuk segala kebutuhan anda</p>
+                            </div>
+                            <div class="tab" data-tab="resource2">
+                              <h6 class="fw-bold fs-6">Kolaborasi</h6>
+                              <p style="margin-top: -5px; font-size: 14px;">Buka peluang untuk tumbuh dengan berbagai program kreatif kami</p>
+                            </div>
+                            <div class="tab" data-tab="resource3">
+                              <h6 class="fw-bold fs-6">Partner Komersial</h6>
+                              <p style="margin-top: -5px; font-size: 14px;">Sinergikan bisnis anda dengan sousi dan layanan kami</p>
+                            </div>
+                            <div class="tab" data-tab="resource4">
+                              <h6 class="fw-bold fs-6">Program & Promosi</h6>
+                              <p style="margin-top: -5px; font-size: 14px;">Kolaborasi mekari dan partner untuk kembangkan bisnis anda</p>
+                            </div>
+                        </div>
+                        <div class="popup__content">
+                            <div id="resource1" class="tab__content active">
+                              <p>Panduan & literasi</p>
+                              
+                              <div class="solution_wrapper d-flex flex-wrap">
+                                <div class="solution__items">
+                                  <a href="blog.html">
+                                    <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                      <div class="images_sl ">
+                                        <img src="assets/img/ich-solution-business.svg" alt="">
+                                      </div>
+                                      <div class="text_sl">
+                                        <p class="mt-4 mx-1">Blog</p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="solution__items">
+                                  <a href="customer__service.html">
+                                    <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                      <div class="images_sl ">
+                                        <img src="assets/img/ich-help-centre.svg" alt="">
+                                      </div>
+                                      <div class="text_sl">
+                                        <p class="mt-4 mx-1">Pusat Bantuan</p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="solution__items">
+                                  <a href="klien_kami.html">
+                                    <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                      <div class="images_sl ">
+                                        <img src="assets/img/ich-mengapa-mekari.svg" alt="">
+                                      </div>
+                                      <div class="text_sl">
+                                        <p class="mt-4 mx-1">Study Kasus</p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="resource2" class="tab__content">
+                                <p>Kolaborasi</p>
+                                <div class="solution_wrapper d-flex flex-wrap">
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-news.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">News & PR</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="customer__service.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-events.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Mekari Event</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="klien_kami.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ic-h-file-audio.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Mekari Podcast</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="klien_kami.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-community.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Mekari Community</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div id="resource3" class="tab__content">
+                                <p>Partner Komersial</p>
+                                <div class="solution_wrapper d-flex flex-wrap">
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Program Referal</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="customer__service.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Program Sistem Integrator</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="klien_kami.html">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="images_sl ">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                        </div>
+                                        <div class="text_sl">
+                                          <p class="mt-4 mx-1">Program Reseller</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div id="resource4" class="tab__content">
+                                <p>Program dan Promosi</p>
+                                <div class="solution_wrapper d-flex flex-wrap">
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="solution__items">
+                                    <a href="">
+                                      <div class="items__sl d-flex align-items-center" style="width:300px;">
+                                        <div class="text_sl">
+                                          <h6 class="mt-4 fw-bold">HSBC</h6>
+                                          <p style="margin-top: -5px;">Kolaborasi mekari X HSBC untuk akselrasikan bisnis anda</p>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  
+                                  
+  
+  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="resources.html">Resources</a>
+                
+                <li class="underline"><a href="">Harga</a></li>
+                <li class="underline mekari">
+                    <a href="tentang.html"><span>Mekari</span><img src="assets/img/dropdown.svg" alt=""></a>
+                    <div class="popup-mekari">
+                        <div class="popup__content">
+                            <p>Tentang Mekari</p>
+                            <ul>
+                              <li><a href="carrers.html">
+                                  <div class="solusi__item d-flex">
+                                      <div class="img__thumb">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                      </div>
+                                      <div class="solusi__teks">
+                                          <p>Karir</p>
+                                          <p>Solusi bisnis berkembang dan berekpansi</p>
+                                      </div>
+                                  </div>
+                              </a></li>
+                              <li><a href="#">
+                                  <div class="solusi__item d-flex">
+                                      <div class="img__thumb">
+                                          <img src="assets/img/ich-solution-business.svg" alt="">
+                                      </div>
+                                      <div class="solusi__teks">
+                                          <p>Mengapa Mekari</p>
+                                          <p>Solusi bisnis berkembang dan berekpansi</p>
+                                      </div>
+                                  </div>
+                              </a></li>
+                          </ul>
+                        </div>
+                    </div>
                 </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Harga</a>
-                </li>
-                <li class="nav-item px-3">
-                  <a class="nav-link" href="#">Tentang</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+                
+            </ul>
+        </div>
+
+        <div class="sci__sec">
+            <ul>
+                <li class="underline"><a href="">Sign In</a></li>
+                <li><button><i class="fab fa-whatsapp"></i><span>Whatsapp Kami</span></button></li>
+            </ul>
+        </div>
+    </div>
   </header>
+  
 
     
         <main>
