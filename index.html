@@ -11,7 +11,32 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
+  <style>
+   .logo {
+    max-height: 56px;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+    opacity: 1;
+    transform: translateY(0); /* Posisi normal */
+}
+
+.fall {
+    opacity: 0;
+    transform: translateY(100%); /* Tenggelam ke bawah */
+}
+
+.rise {
+    opacity: 0;
+    transform: translateY(-100%); /* Muncul dari atas */
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi normal dan terlihat */
+}
+
+  </style>
   <body>
+    
     <header>
       <div class="navbar__sect">
         <div class="logo">
@@ -656,13 +681,13 @@
             </div>
         </div>
 
-        <section class="wwa bg-white py-3 px-3">
-          <div class="container__wwa mt-5 px-2 py-3">
+        <section class="wwa bg-white px-1">
+          <div class="container__wwa mt-5 ">
               <div class="card rounded-lg">
                   <div class="row">
-                      <div class="col-md-7 px-5 py-4">
+                      <div class="col-md-7 px-4 px-lg-5 py-2 py-lg-4">
                           <div class="card-body text-white p-3 d-flex  justify-content-center flex-column h-100">
-                              <h3 class="card-title fs-1">Bersama membangun ekonomi <br> digital Indonesia</h3>
+                              <h3 class="card-title fs-1">Bersama membangun ekonomi digital Indonesia</h3>
                               <p class="card-text my-4">Mekari adalah platform transformasi yang menyediakan solusi serta layanan digital untuk mendukung bisnis capai hasil terbaik dengan skala yang lebih besar.</p>
                               <a href="" class="text-white text-decoration-none"><i class="fas fa-play text-white "></i><span class="mx-2">Sekilas Tentang Nagara Pusaka</span></a>
                           </div>
@@ -676,47 +701,47 @@
       </section>
 
       <section class="clients__logo bg-white py-5">
-        <div class="custom_container">
+        <div class="custom_container px-1 px-sm-5 ">
           <div class="clients__logo_title text-center px-1">
             <h5>Telah dipercaya 35.000+ bisnis Indonesia di berbagai industri</h5>
           </div>
   
-          <div class="clients__logo_items d-flex mt-5 flex-wrap justify-content-center py-3">
-            <div class="items">
+          <div class="clients__logo_items row-gap-3 d-flex mt-5 flex-wrap justify-content-center py-3 px-1 px-lg-2">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
               <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-agung-sedayu-group-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-alodokter-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/Hibank.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-hana-bank-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-toyota-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-hyundai-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-puma-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-kemenhub-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-mayapada-hospital-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-transvision-148x56-1.webp" alt="">
             </div>
-            <div class="items">
-              <img src="assets/img/logo-faber-castle-148x56-1.webp" alt="">
+            <div class="items small_card__logo d-flex align-items-center justify-content-center">
+              <img src="assets/img/logo-tupperware-148x56-1.webp" alt="">
             </div>
           </div>
         </div>
@@ -732,29 +757,96 @@
           <div class="our_solution_card mt-5 ">
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card h-100 border-0">
+                <div class="card h-100 border-0 blue__light">
                   <img src="assets/img/Mekari-_-Asset-_-Solusi-Cloud-based-software-2.webp" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Cloud based software</h5>
                     <p class="card-text">Software berbasis cloud dengan agilitas dan skalabilitas untuk percepat operasional dan pengambilan keputusan bisnis.</p>
+                    <ul class="list-unstyled d-flex justify-content-between flex-wrap">
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Talenta</span>
+                      </a></li>
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-Qontak-Logomark-RGB.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Qontak</span>
+                      </a></li>
+                      <li class="w-50 my-2 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-Jurnal-Logomark-RGB.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Jurnal</span>
+                      </a></li>
+                      <li class="w-50 my-2 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-Klikpajak-Logomark-RGB.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Klipajak</span>
+                      </a></li>
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-Flex-Logomark-RGB.webp" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Flex</span>
+                      </a></li>
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/logomark-mekari-expense.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Expense</span>
+                      </a></li>
+                      <li class="w-50 my-2 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-e-Sign-Logomark-RGB.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Sign</span>
+                      </a></li>
+                      <li class="w-50 my-2 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/logo_mekari_stream.webp" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Stream</span>
+                      </a></li>
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/apps-mekari-capital.webp" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Capital</span>
+                      </a></li>
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-Pay-Logomark-RGB.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Pay</span>
+                      </a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100 border-0">
+                <div class="card h-100 border-0 blue__light">
                   <img src="assets/img/Mekari-_-Asset-_-Solusi-Financial-Service-2.webp" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Software pendukung</h5>
                     <p class="card-text">Solusi modern dan inovasi Mekari yang berfokus pada dukungan benefit, pendanaan, hingga pembuatan aplikasi bisnis.</p>
+                    <ul class="list-unstyled d-flex justify-content-between flex-wrap">
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/apps-flow.webp" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Flow</span>
+                      </a></li>
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/apps-access.webp" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Access</span>
+                      </a></li>
+                      <li class="w-50 my-2 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/apps-airene.webp" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Airene</span>
+                      </a></li>
+                      <li class="w-50 my-2 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/apps_mekari_officeless.webp" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">Officeles</span>
+                      </a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
               <div class="col">
-                <div class="card h-100 border-0">
+                <div class="card h-100 border-0 blue__light">
                   <img src="assets/img/Mekari-_-Asset-_-Solusi-Professional-Service-2.webp" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Professional services</h5>
                     <p class="card-text">Berbagai layanan dan program dirancang khusus untuk meningkatkan keterampilan dan kemampuan baik eksekutor maupun pengambil keputusan bisnis.</p>
+                    <ul class="list-unstyled d-flex justify-content-between flex-wrap">
+                      <li class="w-50 hover__card__effect p-1 rounded-1"><a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="assets/img/Mekari-University-Logomark-RGB.svg" alt="" class="smallest__img">
+                        <span class="mx-2 text-secondary">University</span>
+                      </a></li>
+                      
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -906,18 +998,18 @@
       <section class="footer__cta py-5 bg-white">
        <div class="container text-center">
         <div class="cta__logo">
-          <img src="assets/img/logomark-Mekari.svg">
+          <img src="assets/img/logo.png" class="small__img__logo">
         </div>
         <div class="cta__title my-3">
           <h3>Wujudkan revolusi dunia kerja masa depan dengan Mekari</h3>
         </div>
         <div class="cta__desc">
-          <p>Melalui solusi #PowerYourGrowth untuk bisnis dan professional, konsultasikan <br> secara gratis bagaimana kami membantu bisnis dan tim Anda berkembang</p>
+          <p>Melalui solusi #PowerYourGrowth untuk bisnis dan professional, konsultasikan secara gratis bagaimana kami membantu bisnis dan tim Anda berkembang</p>
         </div>
         <div class="cta__button d-flex align-items-center justify-content-center ">
           <ul class="list-unstyled d-flex flex-wrap gap-2">
             <li><button class="border-0 btn btn-primary"><i class="fab fa-whatsapp"></i><span class="mx-2">Whatsapp</span></button></li>
-            <li><button class="border-0 btn btn-secondary">Hubungi Kami</button></li>
+            <li><button class="border-1 border-primary bg-transparent btn text-primary">Hubungi Kami</button></li>
           </ul>
         </div>
        </div>
@@ -928,7 +1020,7 @@
           <div class="row">
             <!-- Logo -->
             <div class="col-12 col-md-2 ">
-              <img src="assets/img/logo.png" alt="" class="small__img__logo">
+              <img src="assets/img/logo.png" alt="" class="small__img__logo mb-4">
             </div>
             
             <!-- Mengapa Mekari -->
@@ -998,19 +1090,20 @@
       </div>
 
       <section class="footer_addr mt-3">
-        <div class="container pt-3">
+        <div class="custom_container pt-3">
           <div class="row d-flex justify-content-between">
             <div class="col-12 col-md-2 flex justify-content-center align-items-center">
               <ul class="d-flex list-unstyled flex justify-content-center align-items-center">
                 <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
-                <li class="mx-2"><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                <li class="mx-2"><img src="assets/img/icf-instagram.svg" alt=""></li>
                 <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
-                <li class="mx-2"><img src="assets/img/icf-linkedin.svg" alt=""></li>
-                <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
-                <li class="ms-2"><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                <li class="mx-2"><img src="assets/img/icf-twitter.svg" alt=""></li>
+                <li><img src="assets/img/icf-facebook.svg" alt=""></li>
+                <li class="ms-2"><img src="assets/img/icf-tiktok.svg" alt=""></li>
+                <li class="ms-2"><img src="assets/img/icf-youtube.svg" alt=""></li>
               </ul>
             </div>
-            <div class="col-md-9 px-5 addr_location">
+            <div class="col-md-9 px-2 px-lg-5 addr_location">
               <ul class="list-unstyled">
                 <li class="d-flex justify-content-between flex-wrap">
                   <span class="location"><strong>Jakarta</strong></span>
@@ -1047,7 +1140,7 @@
       <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+<!--   
       <script>
         document.addEventListener("DOMContentLoaded", function () {
     const produkItem = document.getElementById("produk-item");
@@ -1065,6 +1158,40 @@
 });
 
 
-      </script>
+      </script> -->
+
+      <!-- <script>
+        // Daftar gambar logo
+const logos = [
+    "assets/img/logo-faber-castle-148x56-1.webp",
+    "assets/img/logo-agung-sedayu-group-148x56-1.webp",
+    "assets/img/logo-alodokter-148x56-1.webp",
+    "assets/img/Hibank.webp",
+    // Tambahkan lebih banyak logo jika diperlukan
+];
+
+const logoDisplay = document.getElementsByClassName("logo-display");
+
+function changeLogo() {
+    // Tambahkan class collapsed untuk menjalankan animasi
+    logoDisplay.classList.add("collapsed");
+
+    // Ganti logo setelah animasi collapse selesai (500ms)
+    setTimeout(() => {
+        // Pilih logo secara random
+        const randomLogo = logos[Math.floor(Math.random() * logos.length)];
+        
+        // Ganti src gambar logo
+        logoDisplay.src = randomLogo;
+
+        // Hapus class collapsed setelah mengganti gambar untuk memperlihatkan animasi expand
+        logoDisplay.classList.remove("collapsed");
+    }, 500); // Sesuaikan dengan durasi animasi CSS
+}
+
+// Ubah logo setiap 2 detik
+setInterval(changeLogo, 2000);
+
+      </script> -->
   </body>
 </html>

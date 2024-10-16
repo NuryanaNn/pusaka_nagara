@@ -46,6 +46,10 @@ body{
     width: 50px !important;
 }
 
+.smallest__img{
+    width: 20px;
+}
+
 .small__img__logo{
     width: 150px;
 }
@@ -91,10 +95,10 @@ body{
 .clients__logo_items img{
     width: 200px;
 }
-
+/* 
 .our_solution_card .card{
     background-color: #F1F5F9;
-}
+} */
 
 .masthead__item{
     width: 500px;
@@ -272,7 +276,7 @@ body{
 
 
 
-/* Fungsi animasi */
+/* Formating animasi */
 .hover__efect:hover img{
     scale: 1.1;
     transition: .5s;
@@ -285,17 +289,27 @@ body{
     font-size: 13px;
 }
 
+.extra__small__text{
+    font-size: 11px;
+}
+
 .medium__text{
     font-size: 16px;
 }
 
 
-/* Fungsi Bayangan */
+/* Formating Bayangan */
 .box__shadow{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
+/* Formating Hover */
+.hover__card__effect:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
 
 
 /* Ini navbar */
@@ -309,6 +323,7 @@ body{
     width: 100%;
     z-index: 100;
     background-color: white;
+    border-bottom: 1px solid rgb(231, 227, 227);
 }
 
 .navbar__sect .logo{
@@ -553,12 +568,79 @@ body{
 }
 
 
+/* tab partner */
+/* Layout untuk kolom */
+/* Layout untuk kolom */
+/* Layout untuk kolom */
+/* Layout untuk kolom */
+.row {
+    display: flex;
+}
+
+.col-4 {
+    flex: 0 0 33.33%;
+}
+
+.custom__col__12 {
+    flex: 0 0 66.66%;
+    padding-left: 20px;
+    overflow-y: auto; /* Aktifkan scroll vertikal */
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    max-height: 400px;
+}
+
+/* Style untuk tab button */
+.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-link {
+    /* background-color: #f1f1f1; */
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    /* transition: background-color 0.3s; */
+    margin-bottom: 5px;
+}
+
+.tab-link.active {
+    font-weight: bold;
+}
+
+/* .tab-link:hover {
+    background-color: #ddd;
+} */
+
+/* Style untuk tab content */
+.tab-content {
+    display: none;
+    height: 400px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .col-4, .col-8 {
+        flex: 100%;
+    }
+}
 
 
 
-
-
-
+/* Bg Body Login */
+.bg_login{
+    background-color: #F2F4F7;
+}
 
 
 
@@ -634,6 +716,11 @@ body{
         padding: 0 1%;
     }
 
+    /* .small_card__logo{
+        height: 50px;
+        width: 50px;
+    }
+     */
 
     /* Halaman Produk */
     .masthead__product_2 h3{

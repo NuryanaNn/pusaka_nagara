@@ -98,6 +98,31 @@ var swiper = new Swiper(".professional__swiper", {
     },
 });
 
+var swiper = new Swiper(".how__it__work", {
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    // grabCursor: true, // Menambahkan opsi ini agar kursor bisa berganti saat menggeser
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: true, // Memperbaiki typo "disabledonINteraction" menjadi "disableOnInteraction"
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 1,
+        },
+    },
+});
+
 var swiper = new Swiper(".my_rss_items", {
     loop: true,
     centeredSlides: true,
@@ -279,4 +304,25 @@ document.addEventListener('DOMContentLoaded', function() {
         popupMekari.style.display = 'none';
     });
 });
+
+
+function openTab(evt, tabName) {
+    // Menyembunyikan semua konten tab
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Menghapus class 'active' dari semua tab button
+    const tabLinks = document.querySelectorAll('.tab-link');
+    tabLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Menampilkan tab yang dipilih
+    document.getElementById(tabName).classList.add('active');
+
+    // Menambahkan class 'active' pada tab yang dipilih
+    evt.currentTarget.classList.add('active');
+}
 
