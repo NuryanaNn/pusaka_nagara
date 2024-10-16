@@ -301,6 +301,10 @@ body{
     font-size: 14px;
 }
 
+.large__text{
+    font-size: 20px;
+}
+
 /* Formating margin */
 .small__mt{
     margin-top: -15px;
