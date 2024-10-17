@@ -18,6 +18,14 @@ body{
     color: gold;
 }
 
+.bg__pink{
+    background-color: #E97BF9;
+}
+
+.bg__light__black{
+    background-color: #22201D;
+}
+
 .blue__light{
     background-color: #F1F5F9 !important;
 }
