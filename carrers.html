@@ -34,6 +34,13 @@
     transform: translateY(0); /* Kembali ke posisi normal dan terlihat */
 }
 
+.weird-tab-pane {
+        display: none; /* Semua tab secara default disembunyikan */
+    }
+    .weird-tab-pane.active {
+        display: block; /* Hanya tab yang aktif yang akan tampil */
+    }
+
   </style>
   <body>
     
@@ -776,79 +783,96 @@
 
     <section class="sdna bg-white py-5">
         <div class="custom_container">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active text-dark text-start" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><span>#BukaJalan</span><br>
-                    <span>Terus Mencari Solusi</span><br>
-                    <span>Selalu berupaya untuk mencari jalan <br> keluar dalam tim sendiri maupun <br> untuk orang lain</span>
-                </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link text-dark text-start" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                    <span>#BukaJalan</span><br>
-                    <span>Terus Mencari Solusi</span><br>
-                    <span>Selalu berupaya untuk mencari jalan <br> keluar dalam tim sendiri maupun <br> untuk orang lain</span>
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link text-dark text-start" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-                    <span>#BukaJalan</span><br>
-                    <span>Terus Mencari Solusi</span><br>
-                    <span>Selalu berupaya untuk mencari jalan <br> keluar dalam tim sendiri maupun <br> untuk orang lain</span>
-                  </button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h5>"Di tim CX, kita selalu set goals & priorities, clarify job scope, dan ngadain regular catch up dengan tim lain untuk solve semua blockers yang ada.”</h5>
-                            <audio src=""></audio>
-                            <h6>Diana Octavia</h6>
-                            <p>Head of Customer Experience</p>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-center">
-                            <img src="assets/img/img-diana-octavia-1.jpeg" alt="">
-                        </div>
-                    </div>
+          <nav>
+            <div class="weird-nav weird-nav-tabs" id="weird-nav-tab" role="tablist">
+              <button class="weird-nav-link px-5 active bg-transparent border-0" id="weird-nav-home-tab" data-bs-toggle="tab" data-bs-target="#weird-nav-home" type="button" role="tab" aria-controls="weird-nav-home" aria-selected="true">
+                <div class="button__content text-start">
+                  <span>#BukaJalan</span>
+                  <h4>Terus Mencari Sokusi</h4>
+                  <p>Selalu berupaya untuk mencari jalan <br> keluar dalam tim sendiri maupun <br> untuk orang lain</p>
                 </div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h5>"Di tim CX, kita selalu set goals & priorities, clarify job scope, dan ngadain regular catch up dengan tim lain untuk solve semua blockers yang ada.”</h5>
-                            <audio src=""></audio>
-                            <h6>Diana Octavia</h6>
-                            <p>Head of Customer Experience</p>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-center">
-                            <img src="assets/img/img-diana-octavia-1.jpeg" alt="">
-                        </div>
-                    </div>
+              </button>
+              <button class="weird-nav-link px-5 bg-transparent border-0" id="weird-nav-profile-tab" data-bs-toggle="tab" data-bs-target="#weird-nav-profile" type="button" role="tab" aria-controls="weird-nav-profile" aria-selected="false">
+                <div class="button__content text-start">
+                  <span>#BukaJalan</span>
+                  <h4>Terus Mencari Sokusi</h4>
+                  <p>Selalu berupaya untuk mencari jalan <br> keluar dalam tim sendiri maupun <br> untuk orang lain</p>
                 </div>
-                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                    <div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h5>"Di tim CX, kita selalu set goals & priorities, clarify job scope, dan ngadain regular catch up dengan tim lain untuk solve semua blockers yang ada.”</h5>
-                            <audio src=""></audio>
-                            <h6>Diana Octavia</h6>
-                            <p>Head of Customer Experience</p>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-center">
-                            <img src="assets/img/img-diana-octavia-1.jpeg" alt="">
-                        </div>
-                    </div><div class="row">
-                        <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <h5>"Di tim CX, kita selalu set goals & priorities, clarify job scope, dan ngadain regular catch up dengan tim lain untuk solve semua blockers yang ada.”</h5>
-                            <audio src=""></audio>
-                            <h6>Diana Octavia</h6>
-                            <p>Head of Customer Experience</p>
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-center">
-                            <img src="assets/img/img-diana-octavia-1.jpeg" alt="">
-                        </div>
+              </button>
+              <button class="weird-nav-link px-5 bg-transparent border-0" id="weird-nav-contact-tab" data-bs-toggle="tab" data-bs-target="#weird-nav-contact" type="button" role="tab" aria-controls="weird-nav-contact" aria-selected="false">
+                <div class="button__content text-start">
+                  <span>#BukaJalan</span>
+                  <h4>Terus Mencari Sokusi</h4>
+                  <p>Selalu berupaya untuk mencari jalan <br> keluar dalam tim sendiri maupun <br> untuk orang lain</p>
+                </div>
+              </button>
+            </div>
+          </nav>
+          
+          <div class="weird-tab-content px-5" id="weird-nav-tabContent">
+            <div class="weird-tab-pane fade show active" id="weird-nav-home" role="tabpanel" aria-labelledby="weird-nav-home-tab" tabindex="0">
+              <div class="card__content d-flex align-items-center">
+                <div class="card__text">
+                  <div class="quotes">
+                    <p>“Tim UX Research selalu kolaboratif dan suportif dalam setiap task yang kita kerjain, salah satunya dengan saling bantu dan sharing.”
+                    </p>
+                  </div>
+
+                  <div class="author">
+                    <h3>Muhammad Varrel Radiman</h3>
+                    <p>UX Researcher</p>
+                  </div>
+
+                  </div>
+                  <div class="team__img">
+                    <img src="assets/img/img-muhammad-verrel-radiman-1.jpeg" alt="">
+                  </div>
+                </div>
+            </div>
+            <div class="weird-tab-pane fade" id="weird-nav-profile" role="tabpanel" aria-labelledby="weird-nav-profile-tab" tabindex="0">
+              <div class="card__content">
+                <div class="card__text">
+                  <div class="card__content d-flex align-items-center">
+                    <div class="card__text">
+                      <div class="quotes">
+                        <p>“Tim UX Research selalu kolaboratif dan suportif dalam setiap task yang kita kerjain, salah satunya dengan saling bantu dan sharing.”
+                        </p>
+                      </div>
+    
+                      <div class="author">
+                        <h3>Muhammad Varrel Radiman</h3>
+                        <p>UX Researcher</p>
+                      </div>
+    
+                      </div>
+                      <div class="team__img">
+                        <img src="assets/img/img-muhammad-verrel-radiman-1.jpeg" alt="">
+                      </div>
                     </div>
                 </div>
               </div>
+            </div>
+            <div class="weird-tab-pane fade" id="weird-nav-contact" role="tabpanel" aria-labelledby="weird-nav-contact-tab" tabindex="0">
+              <div class="card__content d-flex align-items-center">
+                <div class="card__text">
+                  <div class="quotes">
+                    <p>“Tim UX Research selalu kolaboratif dan suportif dalam setiap task yang kita kerjain, salah satunya dengan saling bantu dan sharing.”
+                    </p>
+                  </div>
+
+                  <div class="author">
+                    <h3>Muhammad Varrel Radiman</h3>
+                    <p>UX Researcher</p>
+                  </div>
+
+                  </div>
+                  <div class="team__img">
+                    <img src="assets/img/img-muhammad-verrel-radiman-1.jpeg" alt="">
+                  </div>
+                </div>
+            </div>
+          </div>
+          
         </div>
     </section>
 
