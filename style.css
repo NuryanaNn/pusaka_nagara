@@ -474,6 +474,10 @@ body{
     display: block;
 }
 
+.tab-content__cs.active{
+    display: block;
+}
+
 .popup__content ul {
     list-style: none;
     padding-left: 0;
@@ -782,9 +786,9 @@ body{
     }
 
     /* Halaman CS */
-    .panduan__cs{
+    /* .panduan__cs{
         height: 5000px;
-    }
+    } */
 
     /* mobile nav */
     .sci__sec{

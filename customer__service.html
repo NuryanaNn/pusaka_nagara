@@ -11,30 +11,30 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
-  <style>
-   .logo {
-    max-height: 56px;
-    transition: transform 0.8s ease, opacity 0.8s ease;
-    opacity: 1;
-    transform: translateY(0); /* Posisi normal */
-}
 
-.fall {
-    opacity: 0;
-    transform: translateY(100%); /* Tenggelam ke bawah */
-}
+<style>
+        /* Custom styling to make sure the buttons are vertical */
+        .unique-tabs-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-.rise {
-    opacity: 0;
-    transform: translateY(-100%); /* Muncul dari atas */
-}
+        .unique-tab-content {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
 
-.visible {
-    opacity: 1;
-    transform: translateY(0); /* Kembali ke posisi normal dan terlihat */
-}
+        /* Example to handle active tab buttons */
+        /* .unique-tabs-btns .btn-active {
+            background-color: #007bff;
+            color: white;
+            border-bottom: 2px solid #007bff;
+        } */
+    </style>
 
-  </style>
+ 
   <body>
     
     <header>
@@ -821,173 +821,170 @@
             <section class="panduan__cs">
               <div class="custom_container">
                 <div class="row">
-                  <div class="col-md-4 purple__light__bg py-5">
-                    <div class="d-flex align-items-start">
-                      <div class="nav-link active flex-column nav-pills me-3 p-3 text-light" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <h5 class="text-left mb-4">Temukan panduan Anda berdasarkan kategori</h5>
-                        <button class="nav-link text-light" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                          <div class="text_tabs text-ft w-100 p-2">
-                            <p class="text-start">Guidebook</p>
-                            <p class="text-start">Informasi detail tentang penggunaan software produk Mekari</p>
-                          </div>
-                        </button>
-                        <button class="nav-link  text-light" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                          <div class="text_tabs text-ft w-100 p-2">
-                            <p class="text-start">Guidebook</p>
-                            <p class="text-start">Informasi detail tentang penggunaan software produk Mekari</p>
-                          </div>
-                        </button>
-                        <button class="nav-link text-light" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
-                          <div class="text_tabs text-ft w-100 p-2">
-                            <p class="text-start">Guidebook</p>
-                            <p class="text-start">Informasi detail tentang penggunaan software produk Mekari</p>
-                          </div>
-                        </button>
+                  <!-- Tabs Buttons (Left) -->
+                  <div class="col-3 purple__light__bg py-5 rounded-2">
+                      <div class="unique-tabs-btns">
+                          <button class="btn bg-transparent btn-active text-white" id="tab1-btn" onclick="showTab('tab1')">
+                            <div class="button__text text-start">
+                              <span>Guidebook</span>
+                              <p>Informasi detail tentang penggunaan software produk Mekari</p>
+                            </div>
+                          </button>
+                          <button class="btn bg-transparent border-0 text-white" id="tab2-btn" onclick="showTab('tab2')">
+                            <div class="button__text text-start">
+                              <span>Blog</span>
+                              <p>Berita terkini dari perkembangan bisnis di indonesia</p>
+                            </div>
+                          </button>
+                          <button class="btn bg-transparent border-0 text-white" id="tab3-btn" onclick="showTab('tab3')">
+                            <div class="button__text text-start">
+                              <span>Release Note</span>
+                              <p>Update terkini dari produk mekari</p>
+                            </div>
+                          </button>
                       </div>
                   </div>
-                  </div> 
-                    <div class="col-md-8 bg-white">
-                      <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade bg-white show " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                          <div class="tab__content_cs">
-                            <div class="title py-4">
-                              <h4>Guidebook</h4>
-                            </div>
-                            <div class="cs__content d-flex align-items-center justify-content-center flex-column w-100 h-100">
-                              <img src="assets/img/img-call-center.webp" alt="">
-                              <p>Sekarang, untuk mendapatkan lebih banyak wawasan tentang <br> guidebook produk kunjungi pusat bantuan Mekari.
-                              </p>
-                              <button class="btn btn-primary"><i class="fab fa-whatsapp"></i><span class="mx-2">Kunjungi Pusat Bantuan</span></button>
+          
+                  <!-- Tab Content (Right) -->
+                  <div class="col-9">
+                      <div id="tab1" class="unique-tab-content bg-white">
+                          <div class="row d-flex">
+                            <h5>Guidebook</h5>
+                            <div class="col-md-12 ">
+                              <div class="card__content d-flex justify-content-center align-items-center flex-column">
+                                <img src="assets/img/img-call-center.webp" alt="">
+                                <p>Sekarang, untuk mendapatkan lebih banyak wawasan tentang <br> guidebook produk kunjungi pusat bantuan Mekari.</p>
+                                <button class="btn btn-primary">Kunjungi Pusat Bantuan </button>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                          <div class="tab__content_cs">
-                            <div class="title py-4">
-                              <h4>Blog</h4>
+                      </div>
+                      <div id="tab2" class="unique-tab-content bg-white" style="display: none;">
+                        <h5>Blog</h5>
+                          <div class="row row-gap-4">
+                            <div class="col-md-4">
+                              <div class="card__content border px-3 py-3 rounded-1" >
+                                <div class="iamges">
+                                  <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="smallest__img">
+                                </div>
+                                <div class="card__text">
+                                  <h5>Blog Talenta</h5>
+                                  <p>Informasi seputar berita terkini seputar mekari talenta</p>
+                                </div>
+                              </div>
                             </div>
-                            <div class="cs__content d-flex  flex-column w-100">
-                              <div class="row row-gap-3">
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                      
+                            <div class="col-md-4">
+                              <div class="card__content border px-3 py-3 rounded-1" >
+                                <div class="iamges">
+                                  <img src="assets/img/Mekari-Jurnal-Logomark-RGB.svg" alt="" class="smallest__img">
+                                </div>
+                                <div class="card__text">
+                                  <h5>Blog Jurnal</h5>
+                                  <p>Informasi seputar berita terkini seputar mekari Jurnal</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card__content border px-3 py-3 rounded-1" >
+                                <div class="iamges">
+                                  <img src="assets/img/Mekari-Klikpajak-Logomark-RGB.svg" alt="" class="smallest__img">
+                                </div>
+                                <div class="card__text">
+                                  <h5>Blog Talenta</h5>
+                                  <p>Informasi seputar berita terkini seputar mekari talenta</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card__content border px-3 py-3 rounded-1" >
+                                <div class="iamges">
+                                  <img src="assets/img/Mekari-Qontak-Logomark-RGB.svg" alt="" class="smallest__img">
+                                </div>
+                                <div class="card__text">
+                                  <h5>Blog Talenta</h5>
+                                  <p>Informasi seputar berita terkini seputar mekari talenta</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="card__content border px-3 py-3 rounded-1" >
+                                <div class="iamges">
+                                  <img src="assets/img/Mekari-e-Sign-Logomark-RGB.svg" alt="" class="smallest__img">
+                                </div>
+                                <div class="card__text">
+                                  <h5>Blog Talenta</h5>
+                                  <p>Informasi seputar berita terkini seputar mekari talenta</p>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
-                          <div class="tab__content_cs">
-                            <div class="title py-4">
-                              <h4>Blog</h4>
-                            </div>
-                            <div class="cs__content d-flex  flex-column">
-                              <div class="row row-gap-3">
-                                
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class="col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                                  <div class=" col-6 col-md-4">
-                                    <a href="" class="text-decoration-none">
-                                    <div class="card p-3">
-                                      <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="thumb__img">
-                                      <h3>Blog Talenta</h3>
-                                      <p>Informasi dan berita terkini <br> seputar pusaka nagara</p>
-                                    </div>
-                                  </a>
-                                  </div>
-                      
-                                </div>
+                      </div>
+                      <div id="tab3" class="unique-tab-content bg-white" style="display: none;">
+                        <h5>Release Note</h5>
+                        <div class="row row-gap-4">
+                          <div class="col-md-4">
+                            <div class="card__content border px-3 py-3 rounded-1" >
+                              <div class="iamges">
+                                <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="smallest__img">
+                              </div>
+                              <div class="card__text">
+                                <h5>Blog Talenta</h5>
+                                <p>Informasi seputar berita terkini seputar mekari talenta</p>
                               </div>
                             </div>
                           </div>
-                        </div>
+                          <div class="col-md-4">
+                            <div class="card__content border px-3 py-3 rounded-1" >
+                              <div class="iamges">
+                                <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="smallest__img">
+                              </div>
+                              <div class="card__text">
+                                <h5>Blog Talenta</h5>
+                                <p>Informasi seputar berita terkini seputar mekari talenta</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card__content border px-3 py-3 rounded-1" >
+                              <div class="iamges">
+                                <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="smallest__img">
+                              </div>
+                              <div class="card__text">
+                                <h5>Blog Talenta</h5>
+                                <p>Informasi seputar berita terkini seputar mekari talenta</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card__content border px-3 py-3 rounded-1" >
+                              <div class="iamges">
+                                <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="smallest__img">
+                              </div>
+                              <div class="card__text">
+                                <h5>Blog Talenta</h5>
+                                <p>Informasi seputar berita terkini seputar mekari talenta</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card__content border px-3 py-3 rounded-1" >
+                              <div class="iamges">
+                                <img src="assets/img/Mekari-Talenta-Logomark-RGB.svg" alt="" class="smallest__img">
+                              </div>
+                              <div class="card__text">
+                                <h5>Blog Talenta</h5>
+                                <p>Informasi seputar berita terkini seputar mekari talenta</p>
+                              </div>
+                            </div>
+                          </div>
                       </div>
-                    </div>
-                    </div>
                   </div>
+              </div>
               </div>
             </section>
 
             
-            <section class="footer__cta py-5 bg-white">
+            <section class="footer__cta py-5 bg-white mt-5">
               <div class="container text-center">
                <div class="cta__desc">
                 <img src="assets/img/logo.png" alt="" class="small__img__logo">
@@ -1003,132 +1000,131 @@
              </section>
 
 
+             <section class="footer py-5">
+              <div class="container">
+                <div class="row">
+                  <!-- Logo -->
+                  <div class="col-12 col-md-2 ">
+                    <img src="assets/img/logo.png" alt="" class="small__img__logo mb-4">
+                  </div>
+                  
+                  <!-- Mengapa Mekari -->
+                  <div class="col-6 col-md-2">
+                    <h5 class="medium__text">Mengapa Pusaka Nagara</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Pusat Bantuan</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Klien Kami</a></li>
+                    </ul>
+                  </div>
             
-    
-    <section class="footer py-5">
-        <div class="container">
-          <div class="row">
-            <!-- Logo -->
-            <div class="col-12 col-md-2">
-              <img src="assets/img/logo.png" alt="" class="small__img__logo">
-            </div>
+                  <!-- Produk -->
+                  <div class="col-6 col-md-2">
+                    <h5 class="medium__text">Produk</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari Talenta</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari Jurnal</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari Qontak</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari Klipajak</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari Flex</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari Sign</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari Expense</a></li>
+                    </ul>
+                  </div>
             
-            <!-- Mengapa Mekari -->
-            <div class="col-6 col-md-2">
-              <h5>Mengapa Pusaka Nagara</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-secondary">Pusat Bantuan</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Klien Kami</a></li>
-              </ul>
+                  <!-- Solusi -->
+                  <div class="col-6 col-md-2">
+                    <h5 class="medium__text">Solusi</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Software ERP</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Integrasi</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Harga</a></li>
+                    </ul>
+                  </div>
+            
+                  <!-- Perusahaan -->
+                  <div class="col-6 col-md-2">
+                    <h5 class="medium__text">Perusahaan</h5>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Tentang Mekari</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Mekari University</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Karir - <a href="">We're Hiring!</a></a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Hubungi Kami</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary  extra__medium__text">Kebijakan Privacy</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Syarat & Ketentuan</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Keamanan</a></li>
+                      <li class="my-1"><a href="#" class="text-decoration-none text-secondary extra__medium__text">Blog</a></li>
+                      <li><a href="#" class="text-decoration-none text-secondary extra__medium__text">Sitemap</a></li>
+                    </ul>
+                  </div>
+            
+                  <!-- Footer Logo -->
+                  <div class="col-12 col-md-2 footer_logo">
+                    <ul class="list-unstyled d-flex">
+                      <li><a href="#"><img src="assets/img/qr-code-jurnal_EDIT.png.webp" alt=""></a></li>
+                      <li class="mx-2"><a href="#"><img src="assets/img/pse-terdaftar.png.webp" alt=""></a></li>
+                      <li><a href="#"><img src="assets/img/logo-iso-1.svg" alt=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+      
+            <div class="container">
+              <hr>
             </div>
       
-            <!-- Produk -->
-            <div class="col-6 col-md-2">
-              <h5>Produk</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-secondary">Mekari Talenta</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari Jurnal</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Mekari Qontak</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari Klipajak</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Mekari Flex</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari Sign</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Mekari Expense</a></li>
-              </ul>
-            </div>
+            <section class="footer_addr mt-3">
+              <div class="custom_container pt-3">
+                <div class="row d-flex justify-content-between">
+                  <div class="col-12 col-md-2 flex justify-content-center align-items-center">
+                    <ul class="d-flex list-unstyled flex justify-content-center align-items-center">
+                      <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                      <li class="mx-2"><img src="assets/img/icf-instagram.svg" alt=""></li>
+                      <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
+                      <li class="mx-2"><img src="assets/img/icf-twitter.svg" alt=""></li>
+                      <li><img src="assets/img/icf-facebook.svg" alt=""></li>
+                      <li class="ms-2"><img src="assets/img/icf-tiktok.svg" alt=""></li>
+                      <li class="ms-2"><img src="assets/img/icf-youtube.svg" alt=""></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-9 px-2 px-lg-5 addr_location">
+                    <ul class="list-unstyled">
+                      <li class="d-flex justify-content-between flex-wrap">
+                        <span class="location"><strong>Jakarta</strong></span>
+                        <span class="address">
+                          Mid Plaza 2, Jl. Jenderal Sudirman No.4, Kel. Karet Tengsin, Kec. Tanah Abang, Kota Jakarta Pusat, Jakarta 10220</span>
+                      </li>
+                      <li class="d-flex justify-content-between my-3 flex-wrap">
+                        <span class="location"><strong>Surabaya</strong></span>
+                        <span class="address">Jl. Ngagel Jaya Selatan No.158, Kel. Pucang Sewu, Kec. Gubeng, Kota Surabaya, Jawa Timur 60284</span>
+                      </li>
+                      <li class="d-flex justify-content-between flex-wrap">
+                        <span class="location"><strong>Bandung</strong></span>
+                        <span class="address">l. A. Yani No.271A, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114</span>
+                      </li>
+                      <li class="d-flex justify-content-between mt-3 flex-wrap">
+                        <span class="location"><strong>Medan</strong></span>
+                        <span class="address">Jl. KH. Zainul Arifin No.152, Kel. Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20151</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
       
-            <!-- Solusi -->
-            <div class="col-6 col-md-2">
-              <h5>Solusi</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-secondary">Software ERP</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Integrasi</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Harga</a></li>
-              </ul>
-            </div>
+            <section class="footer__bot bg-white text-center py-4 mt-5">
+              <p>© Copyright 2024 PT Mid Solusi Nusantara.</p>
+            </section>
+            
+              
+            </main>
       
-            <!-- Perusahaan -->
-            <div class="col-6 col-md-2">
-              <h5>Perusahaan</h5>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-decoration-none text-secondary">Tentang Mekari</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Mekari University</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Karir - <a href="">We're Hiring!</a></a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Hubungi Kami</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Kebijakan Privacy</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Syarat & Ketentuan</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Keamanan</a></li>
-                <li class="my-1"><a href="#" class="text-decoration-none text-secondary">Blog</a></li>
-                <li><a href="#" class="text-decoration-none text-secondary">Sitemap</a></li>
-              </ul>
-            </div>
       
-            <!-- Footer Logo -->
-            <div class="col-12 col-md-2 footer_logo">
-              <ul class="list-unstyled d-flex">
-                <li><a href="#"><img src="assets/img/qr-code-jurnal_EDIT.png.webp" alt=""></a></li>
-                <li class="mx-2"><a href="#"><img src="assets/img/pse-terdaftar.png.webp" alt=""></a></li>
-                <li><a href="#"><img src="assets/img/logo-iso-1.svg" alt=""></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
       
-  
-      <div class="container">
-        <hr>
-      </div>
-  
-      <section class="footer_addr mt-3">
-        <div class="container pt-3">
-          <div class="row d-flex justify-content-between">
-            <div class="col-12 col-md-2 flex justify-content-center align-items-center">
-              <ul class="d-flex list-unstyled flex justify-content-center align-items-center">
-                <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
-                <li class="mx-2"><img src="assets/img/icf-instagram.svg" alt=""></li>
-                <li><img src="assets/img/icf-linkedin.svg" alt=""></li>
-                <li class="mx-2"><img src="assets/img/icf-twitter.svg" alt=""></li>
-                <li><img src="assets/img/icf-facebook.svg" alt=""></li>
-                <li class="ms-2"><img src="assets/img/icf-tiktok.svg" alt=""></li>
-                <li class="ms-2"><img src="assets/img/icf-youtube.svg" alt=""></li>
-              </ul>
-            </div>
-            <div class="col-md-9 px-5 addr_location">
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-between flex-wrap">
-                  <span class="location"><strong>Jakarta</strong></span>
-                  <span class="address">
-                    Mid Plaza 2, Jl. Jenderal Sudirman No.4, Kel. Karet Tengsin, Kec. Tanah Abang, Kota Jakarta Pusat, Jakarta 10220</span>
-                </li>
-                <li class="d-flex justify-content-between my-3 flex-wrap">
-                  <span class="location"><strong>Surabaya</strong></span>
-                  <span class="address">Jl. Ngagel Jaya Selatan No.158, Kel. Pucang Sewu, Kec. Gubeng, Kota Surabaya, Jawa Timur 60284</span>
-                </li>
-                <li class="d-flex justify-content-between flex-wrap">
-                  <span class="location"><strong>Bandung</strong></span>
-                  <span class="address">l. A. Yani No.271A, Cihapit, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40114</span>
-                </li>
-                <li class="d-flex justify-content-between mt-3 flex-wrap">
-                  <span class="location"><strong>Medan</strong></span>
-                  <span class="address">Jl. KH. Zainul Arifin No.152, Kel. Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20151</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-      <section class="footer__bot bg-white text-center py-4 mt-5">
-        <p>© Copyright 2024 PT Mid Solusi Nusantara.</p>
-      </section>
+            <script src="script.js"></script>
       
-        
-      </main>
-  
-  
-  
-      <script src="script.js"></script>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-  </html>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      
+        </body>
+      </html>
