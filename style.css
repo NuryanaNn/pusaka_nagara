@@ -62,6 +62,10 @@ body{
     width: 20px;
 }
 
+.resmall__img{
+    width: 90px;
+}
+
 .small__img__logo{
     width: 150px;
 }
