@@ -664,6 +664,10 @@ body{
     display: block;
 }
 
+.burger__menu{
+    display: none;
+}
+
 /* Menu Mobile */
 .burger__menu .bars{
     background-color: #4810C0;
@@ -684,6 +688,7 @@ body{
     z-index: 100;
     transform: translateX(-1000px);
     transition: .5s;
+    display: none;
 }
 
 .sidebar__menu.active{
@@ -727,6 +732,25 @@ body{
         background-color: white;
         border-bottom: 1px solid rgb(231, 227, 227);
     }
+
+    .burger__menu{
+        display: block;
+    }
+    
+
+    /* Sidebar */
+.sidebar__menu{
+    background-color: white;
+    width: 100%;
+    height: 100% !important;
+    position: fixed;
+    top: 2.5rem;
+    z-index: 100;
+    transform: translateX(-1000px);
+    transition: .5s;
+    display: block;
+}
+
 
     /* All page */
     .custom_container{
