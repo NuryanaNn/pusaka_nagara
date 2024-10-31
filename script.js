@@ -326,3 +326,11 @@ function openTab(evt, tabName) {
     evt.currentTarget.classList.add('active');
 }
 
+
+
+let burger__menu = document.querySelector('.burger__menu');
+let sidebar__menu = document.querySelector('.sidebar__menu');
+
+burger__menu.addEventListener('click', function(){
+    sidebar__menu.classList.toggle('active');
+});

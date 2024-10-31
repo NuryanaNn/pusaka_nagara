@@ -664,6 +664,37 @@ body{
     display: block;
 }
 
+/* Menu Mobile */
+.burger__menu .bars{
+    background-color: #4810C0;
+    width: 25px;
+    height: 3px;
+    position: relative;
+    margin-top: 4px;
+}
+
+
+/* Sidebar */
+.sidebar__menu{
+    background-color: white;
+    width: 100%;
+    height: 100% !important;
+    position: fixed;
+    top: 2.5rem;
+    z-index: 100;
+    transform: translateX(-1000px);
+    transition: .5s;
+}
+
+.sidebar__menu.active{
+    transform: translateX(0);
+    transition: .5s;
+}
+
+.sidebar__menu .accordion{
+    height: 100%;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .col-4, .col-8 {
@@ -683,10 +714,24 @@ body{
 
 @media (max-width:480px) {
 
+    .navbar__sect{
+        padding: .3rem 4%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: white;
+        border-bottom: 1px solid rgb(231, 227, 227);
+    }
+
     /* All page */
-.custom_container{
-    padding: 0 1rem !important;
-}
+    .custom_container{
+        padding: 0 1rem !important;
+    }
 
     .navigation__sec{
         display: none;
